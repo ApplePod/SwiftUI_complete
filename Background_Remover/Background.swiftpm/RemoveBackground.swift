@@ -11,6 +11,12 @@ import CoreML
 
 class RemoveBackground: ObservableObject {
     
+    var BackgroundName: String
+    
+    init(BackgroundName: String) {
+        self.BackgroundName = BackgroundName
+    }
+    
     private let model = try! VNCoreMLModel(for: DeepLabV3(configuration: MLModelConfiguration()).model )
     
     var InputImage : UIImage = UIImage()
@@ -49,7 +55,7 @@ class RemoveBackground: ObservableObject {
     }
     
     func maskInputImage() -> UIImage {
-        let bgImage = UIImage(named: "Scenery")!.resized(to: self.InputImage.size)
+        let bgImage = UIImage(named: BackgroundName)!.resized(to: self.InputImage.size)
 
         let beginImage = CIImage(cgImage: InputImage.cgImage!)
         let background = CIImage(cgImage: bgImage.cgImage!)

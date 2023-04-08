@@ -10,3 +10,11 @@ struct MyApp: App {
         }
     }
 }
+
+@available(iOS 16.0, *)
+struct MyApp_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .previewInterfaceOrientation(.landscapeLeft)
+    }
+}

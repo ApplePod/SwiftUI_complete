@@ -1,61 +1,80 @@
 import SwiftUI
 import PhotosUI
 
-
 @available(iOS 16.0, *)
 struct ContentView: View {
+
     
-    var inputImage = UIImage(named: "Dog")
-    @State var isOriginalImageUsed: Bool = false
-    @ObservedObject var bgRemover = RemoveBackground()
-    @State private var selectedItem: PhotosPickerItem? = nil
-    @State private var selectedImageData: Data? = nil
-    
+    private let adaptiveCoulumns = [GridItem(.adaptive(minimum: 170))]
     
     var body: some View {
         
-        VStack {
+        NavigationView {
             
-            PhotosPicker(selection: $selectedItem, matching: .images, photoLibrary: .shared()) {
-                Text("Select a photo")
-            }.onChange(of: selectedItem) { newValue in
-                Task {
-                    // Retrive selected asset in the form of Data
-                    if let data = try? await newValue?.loadTransferable(type: Data.self) {
-                        selectedImageData = data
-                    }
-                }
-            }
-            
-            if let selectedImageData,
-               let uiImage = UIImage(data: selectedImageData) {
-                Image(uiImage: uiImage)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 250, height: 250)
-            }
+            PickerView()
+            AnimatedText()
 
-    
-            Image(uiImage: inputImage!)
-                .resizable()
-                .scaledToFit()
-            if bgRemover.outputImage != nil {
-                Image(uiImage: bgRemover.outputImage!)
-                    .resizable()
-                    .scaledToFit()
-                
-            } else  {
-                
-                Button("Segment") {
-                    bgRemover.InputImage = inputImage!
-                    bgRemover.segmentImage()
-                    
-                    
-                }
-                
-                
-            }
-            
         }.padding()
     }
 }
+
+import SwiftUI
+
+import SwiftUI
+
+struct AnimatedText: View {
+    let sentences = [
+        "첫 번째 문장입니다.",
+        "두 번째 문장입니다.",
+        "세 번째 문장입니다."
+    ]
+    
+    @State private var currentIndex = 0
+    @State private var showNextScreenButton = false
+    
+    var body: some View {
+        VStack {
+            Text(sentences[currentIndex])
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.black)
+                .opacity(currentIndex == 0 ? 0.2 : 1.0)
+                .animation(.easeInOut(duration: 1.0))
+                .onAppear {
+                    Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { timer in
+                        withAnimation {
+                            if currentIndex < sentences.count - 1 {
+                                currentIndex += 1
+                            } else {
+                                timer.invalidate()
+                                showNextScreenButton = true
+                            }
+                        }
+                    }
+                }
+                .padding()
+//                .background(Color.black.edgesIgnoringSafeArea(.all))
+            
+            if showNextScreenButton {
+                    NavigationLink(destination: ImageView()) {
+                        Text("다음 화면으로")
+                            .padding()
+                    }
+            }
+        }
+    }
+}
+
+
+
+
+@available(iOS 16.0, *)
+struct ContentView_Previews: PreviewProvider {
+   
+    static var previews: some View {
+        ContentView()
+            .previewInterfaceOrientation(.landscapeLeft)
+    }
+}
+
+
