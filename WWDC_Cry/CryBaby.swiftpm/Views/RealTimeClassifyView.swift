@@ -27,7 +27,7 @@ struct RealTimeClassifyView: View {
 class ContentViewModel: NSObject, ObservableObject, GenderClassifierDelegate {
 
     private let audioEngine = AVAudioEngine()
-    private var soundClassifier = try! MySoundClassifier(configuration: .init())
+    private var soundClassifier = try! FirstSoundClassification(configuration: .init())
 
     var inputFormat: AVAudioFormat!
     var analyzer: SNAudioStreamAnalyzer!
@@ -81,7 +81,7 @@ class ResultsObserver: NSObject, SNResultsObserving {
         let confidence = classification.confidence * 100.0
         
         if confidence > 60 {
-            delegate?.displayPredictionResult(identifier: classification.identifier, confidence: confidence)
+            delegate?.displayPredictionResult(identifier: confidence > 99.9 ? classification.identifier : "Noisy", confidence: confidence)
         }
     }
 }
