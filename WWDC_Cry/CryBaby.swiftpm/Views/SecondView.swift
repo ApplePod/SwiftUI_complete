@@ -1,5 +1,6 @@
 import SwiftUI
 import AVFoundation
+import CoreML
 
 struct SecondView: View {
     

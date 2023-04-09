@@ -1,0 +1,13 @@
+{
+  "data" : [
+    {
+      "compression-type" : "automatic",
+      "filename" : "GenderSoundClassification.mlmodel",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

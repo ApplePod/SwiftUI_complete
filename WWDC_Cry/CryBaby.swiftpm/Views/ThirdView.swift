@@ -55,7 +55,7 @@ struct ThirdView: View {
                             
                             VStack{
                                 ListeningSiriAnimation(scaleSize: 0.2)
-                                    .offset(x: 0, y: -30)
+                                    .offset(x: 10, y: -30)
                                 
                                 Text("The infant's cry was analyzed through deep learning. MFCC (Mel-Frequency Cepstral Coefficients) algorithm was used. The figure below obtains the frequency component through Fast Fourier Transform and visualizes the result through Mel-Spectrogram.")
                                     .foregroundColor(.white)
