@@ -20,7 +20,7 @@ let package = Package(
             teamIdentifier: "ADU9G6DNZ9",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .coffee),
+            appIcon: .asset("AppIcon"),
             accentColor: .presetColor(.purple),
             supportedDeviceFamilies: [
                 .pad,
@@ -31,6 +31,13 @@ let package = Package(
                 .landscapeRight,
                 .landscapeLeft,
                 .portraitUpsideDown(.when(deviceFamilies: [.pad]))
+            ],
+            capabilities: [
+                .fileAccess(.downloadsFolder, mode: .readWrite),
+                .fileAccess(.pictureFolder, mode: .readWrite),
+                .fileAccess(.moviesFolder, mode: .readWrite),
+                .fileAccess(.musicFolder, mode: .readWrite),
+                .fileAccess(.userSelectedFiles, mode: .readWrite)
             ]
         )
     ],
