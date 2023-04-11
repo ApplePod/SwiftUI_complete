@@ -62,8 +62,8 @@
             filePath = "Views/SecondView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -78,28 +78,28 @@
             filePath = "Views/SecondView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
             landmarkName = "SecondView_Previews"
             landmarkType = "14">
             <Locations>
                <Location
-                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 7294d8820f9d378d"
+                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 31663cdedf2f9137"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CryBaby.SecondView_Previews.init() -&gt; CryBaby.SecondView_Previews"
+                  symbolName = "closure #2 () -&gt; SwiftUI.Text in closure #4 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0)&gt; in closure #2 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.EmptyView, CryBaby.LoadingView&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.EmptyView, CryBaby.LoadingView&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt;&gt; in CryBaby.SecondView.body.getter : some"
                   moduleName = "CryBaby"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/herry/Desktop/SwiftUI_Complete/WWDC_Cry_Practice/CryBabyPractice.swiftpm/Views/SecondView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "221"
-                  endingLineNumber = "221"
-                  offsetFromSymbolStart = "0">
+                  startingLineNumber = "222"
+                  endingLineNumber = "222"
+                  offsetFromSymbolStart = "584">
                </Location>
                <Location
-                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 7294d8820f9d37ec"
+                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 7294d8820f9d37ae"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -109,8 +109,8 @@
                   urlString = "file:///Users/herry/Desktop/SwiftUI_Complete/WWDC_Cry_Practice/CryBabyPractice.swiftpm/Views/SecondView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "220"
-                  endingLineNumber = "220"
+                  startingLineNumber = "222"
+                  endingLineNumber = "222"
                   offsetFromSymbolStart = "0">
                </Location>
             </Locations>

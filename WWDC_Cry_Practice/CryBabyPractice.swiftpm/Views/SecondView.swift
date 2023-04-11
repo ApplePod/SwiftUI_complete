@@ -64,7 +64,7 @@ struct SecondView: View {
                                 
                                 
                                 // The informational text which is appears on the right side of the screen.
-                                IntroView(subtitle: "Infant cry analysis AI.", subtitleColor: .white, title: "Hi, I am Sori", titleSize: 50, bodyIsOn: true, bodyText: "Hello, I am an AI sound analysis tool that specializes in analyzing the sounds of infants. I can distinguish infant cries into five categories: burping, discomfort, hunger, pain, and tiredness. Please feel free to listen to the sound on the right and try to distinguish which category it belongs to.", bodyTextColor: .white, bodyTextSize: 20, bodyPaddingTop: 30, bodyWidth: 500)
+                                IntroView(subtitle: "Infant cry analysis AI.", subtitleColor: .white, title: "Hi, I am Vox", titleSize: 50, bodyIsOn: true, bodyText: "I am an AI sound analysis tool that specializes in analyzing the sounds of infants. I can distinguish infant cries into five categories: burping, discomfort, hunger, pain, and tiredness. Please feel free to listen to the sound on the right and try to distinguish which category it belongs to.", bodyTextColor: .white, bodyTextSize: 23, bodyPaddingTop: 30, bodyWidth: 500)
                                     .background(RoundedRectangle(cornerRadius: 47, style: .continuous)
                                         .fill(Color(.black))
                                         .frame(width: 585, height: 550)
@@ -73,6 +73,8 @@ struct SecondView: View {
                                 ListeningSiriAnimation(scaleSize: 0.2)
                                     .offset(x: 120 ,y: -90)
                             }
+                            
+    
                             
                         }
                         // Card View
@@ -211,7 +213,7 @@ struct SecondView: View {
                 }
             }
         }
-        .navigationBarBackButtonHidden(true)
+       
         .navigationViewStyle(.stack)
     }
 }

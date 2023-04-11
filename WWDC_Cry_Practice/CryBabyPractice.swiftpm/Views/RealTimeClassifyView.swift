@@ -8,27 +8,31 @@ struct RealTimeClassifyView: View {
     @StateObject var viewModel2 = ContentViewModel2()
 
     var body: some View {
-        VStack(spacing: 50) {
-            
-            ListeningSiriAnimation(scaleSize: 0.3)
-            
-            
-            Text(viewModel.placeholderText)
-                .font(.system(size: 25))
-                .multilineTextAlignment(.center)
-            
-            Text(viewModel.transcribedText)
-                .font(.system(size: 25))
-                .multilineTextAlignment(.center)
-                .padding()
-            
-            if viewModel.transcribedText2 == "Cry" {
-                Text(viewModel2.transcribedText)
+        NavigationView {
+            VStack(spacing: 50) {
+                
+                ListeningSiriAnimation(scaleSize: 0.3)
+                
+                
+                Text(viewModel.placeholderText)
+                    .font(.system(size: 25))
+                    .multilineTextAlignment(.center)
+                
+                Text(viewModel.transcribedText)
                     .font(.system(size: 25))
                     .multilineTextAlignment(.center)
                     .padding()
+                
+                if viewModel.transcribedText2 == "Cry" {
+                    Text(viewModel2.transcribedText)
+                        .font(.system(size: 25))
+                        .multilineTextAlignment(.center)
+                        .padding()
+                }
             }
         }
+        .navigationViewStyle(.stack)
+        .navigationBarHidden(true)
         .onAppear {
             viewModel.startAudioEngine()
             viewModel2.startAudioEngine()

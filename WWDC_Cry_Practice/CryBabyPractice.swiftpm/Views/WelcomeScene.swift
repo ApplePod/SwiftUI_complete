@@ -30,7 +30,7 @@ struct WelcomeScene: View {
                 VStack(alignment: .leading, spacing: 0) {
                     
                     // The informational text which is appears on the top of the screen.
-                    IntroView(subtitle: "BabyCryNetAI", subtitleColor: Color.white, title: "", titleSize: 50, bodyIsOn: true, bodyText: "As we raise children, we reach the limits of our gaze and physical endurance. Technology exists to surpass these limitations and push beyond them.", bodyTextColor: Color.secondary, bodyTextSize: 20, bodyPaddingTop: 5, bodyWidth: 800)
+                    IntroView(subtitle: "", subtitleColor: Color.white, title: "BabyCryNetAI", titleSize: 36, bodyIsOn: true, bodyText: "As we raise children, we reach the limits of our gaze and physical endurance. Technology exists to surpass these limitations and push beyond them.", bodyTextColor: Color.secondary, bodyTextSize: 23, bodyPaddingTop: 5, bodyWidth: 800)
                     
                     // Card View
                     HStack(spacing: 30) {
@@ -85,7 +85,6 @@ struct WelcomeScene: View {
                 
             }
         }
-        .navigationBarBackButtonHidden(true)
         .navigationViewStyle(.stack)
         
     }

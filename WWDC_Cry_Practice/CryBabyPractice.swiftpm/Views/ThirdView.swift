@@ -212,7 +212,6 @@ struct ThirdView: View {
         }
         .navigationBarBackButtonHidden(true)
         .navigationViewStyle(.stack)
-        
     }
     
 }
