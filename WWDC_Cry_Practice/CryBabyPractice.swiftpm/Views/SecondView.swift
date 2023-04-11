@@ -20,8 +20,28 @@ struct SecondView: View {
     @State var Isplay: Bool = false
     @State var playToggle: Bool = true
     
+
     // AVAudioPlayer 인스턴스 생성
     @State var audio : AVAudioPlayer!
+    @State var player: AVAudioPlayer!
+    
+    func playSound(sound: String) {
+        let url = Bundle.main.url(forResource: sound, withExtension: "mp3")
+        
+        guard url != nil else {
+            return
+        }
+        do {
+            
+            player = try AVAudioPlayer(contentsOf: url!)
+            player.volume = 0.8
+        } catch {
+            print("error")
+        }
+        
+    }
+    
+
     
     // MARK: View
     
@@ -62,14 +82,14 @@ struct SecondView: View {
                             // Hand Termor Test Card
                             SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage1, className: "Class 1", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                                 .onTapGesture {
-                                    let song = NSDataAsset (name: "tired")
-                                    self.audio = try! AVAudioPlayer(data: song!.data, fileTypeHint: "mp3")
+                                    playSound(sound: "tired")
                                     if Isplay == false {
-                                        self.audio.play()
+                                        player?.play()
                                         self.playImage1 = "stop1"
                                         Isplay.toggle()
                                     } else {
-                                        self.audio.stop()
+                                       // player.stop()
+                                        player?.stop()
                                         self.playImage1 = "play1"
                                         Isplay.toggle()
                                     }
@@ -79,30 +99,31 @@ struct SecondView: View {
                             // Speaking Test Card
                             SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage2, className: "Class 2", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                                 .onTapGesture {
-                                    let song = NSDataAsset (name: "discomfort")
-                                    self.audio = try! AVAudioPlayer(data: song!.data, fileTypeHint: "mp3")
+                                    playSound(sound: "discomfort")
                                     if Isplay == false {
-                                        self.audio.play()
+                                        player?.play()
                                         self.playImage2 = "stop2"
                                         Isplay.toggle()
                                     } else {
-                                        self.audio.stop()
+                                       // player.stop()
+                                        player?.stop()
                                         self.playImage2 = "play2"
                                         Isplay.toggle()
                                     }
+
                                 }
                             
                             // Handwriting Test Card
                             SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage3, className: "Class 3", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                                 .onTapGesture {
-                                    let song = NSDataAsset (name: "hungry")
-                                    self.audio = try! AVAudioPlayer(data: song!.data, fileTypeHint: "mp3")
+                                    playSound(sound: "hungry")
                                     if Isplay == false {
-                                        self.audio.play()
+                                        player?.play()
                                         self.playImage3 = "stop3"
                                         Isplay.toggle()
                                     } else {
-                                        self.audio.stop()
+                                       // player.stop()
+                                        player?.stop()
                                         self.playImage3 = "play3"
                                         Isplay.toggle()
                                     }
@@ -110,14 +131,14 @@ struct SecondView: View {
                             
                             SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage4, className: "Class 4", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                                 .onTapGesture {
-                                    let song = NSDataAsset (name: "pain")
-                                    self.audio = try! AVAudioPlayer(data: song!.data, fileTypeHint: "mp3")
+                                    playSound(sound: "pain")
                                     if Isplay == false {
-                                        self.audio.play()
+                                        player?.play()
                                         self.playImage4 = "stop4"
                                         Isplay.toggle()
                                     } else {
-                                        self.audio.stop()
+                                       // player.stop()
+                                        player?.stop()
                                         self.playImage4 = "play4"
                                         Isplay.toggle()
                                     }
@@ -126,14 +147,14 @@ struct SecondView: View {
                             
                             SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage5, className: "Class 5", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                                 .onTapGesture {
-                                    let song = NSDataAsset (name: "burping")
-                                    self.audio = try! AVAudioPlayer(data: song!.data, fileTypeHint: "mp3")
+                                    playSound(sound: "burping")
                                     if Isplay == false {
-                                        self.audio.play()
+                                        player?.play()
                                         self.playImage5 = "stop5"
                                         Isplay.toggle()
                                     } else {
-                                        self.audio.stop()
+                                       // player.stop()
+                                        player?.stop()
                                         self.playImage5 = "play5"
                                         Isplay.toggle()
                                     }

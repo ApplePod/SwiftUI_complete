@@ -24,6 +24,24 @@ struct ThirdView: View {
     
     @State var audio : AVAudioPlayer!
     
+    @State var player: AVAudioPlayer!
+    
+    func playSound(sound: String) {
+        let url = Bundle.main.url(forResource: sound, withExtension: "mp3")
+        
+        guard url != nil else {
+            return
+        }
+        do {
+            
+            player = try AVAudioPlayer(contentsOf: url!)
+            player.volume = 0.8
+        } catch {
+            print("error")
+        }
+        
+    }
+    
     // MARK: View
     
     var body: some View {
@@ -79,14 +97,14 @@ struct ThirdView: View {
                     ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage1, className: "Tired",
                         resultImage: analyzeResultImage1, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                         .onTapGesture {
-                            let song = NSDataAsset (name: "tired")
-                            self.audio = try! AVAudioPlayer(data: song!.data, fileTypeHint: "mp3")
+                            playSound(sound: "tired")
                             if Isplay == false {
-                                self.audio.play()
+                                player?.play()
                                 self.playImage1 = "stop1"
                                 Isplay.toggle()
                             } else {
-                                self.audio.stop()
+                               // player.stop()
+                                player?.stop()
                                 self.playImage1 = "play1"
                                 Isplay.toggle()
                             }
@@ -95,14 +113,14 @@ struct ThirdView: View {
                     ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage2, className: "Discomfort",
                         resultImage: analyzeResultImage2, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                         .onTapGesture {
-                            let song = NSDataAsset (name: "discomfort")
-                            self.audio = try! AVAudioPlayer(data: song!.data, fileTypeHint: "mp3")
+                            playSound(sound: "discomfort")
                             if Isplay == false {
-                                self.audio.play()
+                                player?.play()
                                 self.playImage2 = "stop2"
                                 Isplay.toggle()
                             } else {
-                                self.audio.stop()
+                               // player.stop()
+                                player?.stop()
                                 self.playImage2 = "play2"
                                 Isplay.toggle()
                             }
@@ -112,14 +130,14 @@ struct ThirdView: View {
                     ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage3, className: "Herger",
                         resultImage: analyzeResultImage3, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                         .onTapGesture {
-                            let song = NSDataAsset (name: "hungry")
-                            self.audio = try! AVAudioPlayer(data: song!.data, fileTypeHint: "mp3")
+                            playSound(sound: "hungry")
                             if Isplay == false {
-                                self.audio.play()
+                                player?.play()
                                 self.playImage3 = "stop3"
                                 Isplay.toggle()
                             } else {
-                                self.audio.stop()
+                               // player.stop()
+                                player?.stop()
                                 self.playImage3 = "play3"
                                 Isplay.toggle()
                             }
@@ -134,30 +152,29 @@ struct ThirdView: View {
                     ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage4, className: "Pain",
                         resultImage: analyzeResultImage1, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                         .onTapGesture {
-                            let song = NSDataAsset (name: "pain")
-                            self.audio = try! AVAudioPlayer(data: song!.data, fileTypeHint: "mp3")
+                            playSound(sound: "pain")
                             if Isplay == false {
-                                self.audio.play()
+                                player?.play()
                                 self.playImage4 = "stop4"
                                 Isplay.toggle()
                             } else {
-                                self.audio.stop()
+                               // player.stop()
+                                player?.stop()
                                 self.playImage4 = "play4"
                                 Isplay.toggle()
-                            }
-                        }
+                            }                        }
                     
                     ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage5, className: "Burping",
                         resultImage: analyzeResultImage2, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                         .onTapGesture {
-                            let song = NSDataAsset (name: "burping")
-                            self.audio = try! AVAudioPlayer(data: song!.data, fileTypeHint: "mp3")
+                            playSound(sound: "burping")
                             if Isplay == false {
-                                self.audio.play()
+                                player?.play()
                                 self.playImage5 = "stop5"
                                 Isplay.toggle()
                             } else {
-                                self.audio.stop()
+                               // player.stop()
+                                player?.stop()
                                 self.playImage5 = "play5"
                                 Isplay.toggle()
                             }
