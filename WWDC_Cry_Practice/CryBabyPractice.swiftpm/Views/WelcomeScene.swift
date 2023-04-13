@@ -46,7 +46,7 @@ struct WelcomeScene: View {
                             
                             CardView(cardSymbolIsOn: true, cardSymbolName: "", cardSymbolSize: 70, cardSymbolColor: .white, cardSymbolWidth: 250, cardSymbolHeight: 166, cardImage: "", cardSubtitleIsOn: true, cardSubtitle: "What is", cardSubtitleSize: 15, cardSubtitleColor: .white, cardTitle: "Real-time analysis of an infant's crying sound.", cardTitleSize: 22, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.7, width: 250, height: 250, cornerRadius: 40, backgroundColor: .black)
 
-                            ListeningSiriAnimation(scaleSize: 0.2)
+                            ListeningSiriAnimation(scaleSize: 0.6)
                                 .offset(x: 0, y: -30)
 
                         }
@@ -74,6 +74,7 @@ struct WelcomeScene: View {
                         }
                     }
                     .buttonStyle(NavigationButtonStyle(color: .blue))
+                    
                    
                 }
                 .padding(.leading, 20)

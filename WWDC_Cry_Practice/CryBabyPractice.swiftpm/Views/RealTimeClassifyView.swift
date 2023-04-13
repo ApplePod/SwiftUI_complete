@@ -11,7 +11,7 @@ struct RealTimeClassifyView: View {
         NavigationView {
             VStack(spacing: 50) {
                 
-                ListeningSiriAnimation(scaleSize: 0.3)
+                ListeningSiriAnimation(scaleSize: 0.7)
                 
                 
                 Text(viewModel.placeholderText)

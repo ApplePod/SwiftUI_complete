@@ -17,7 +17,7 @@ struct LoadingView: View {
                     .frame(width: 300)
                     .onAppear {
                         // 2
-                        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+                        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { timer in
                             self.value += 25
                             
                             if self.value > 100 {

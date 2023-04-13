@@ -72,7 +72,7 @@ struct ThirdView: View {
 
                             
                             VStack{
-                                ListeningSiriAnimation(scaleSize: 0.2)
+                                ListeningSiriAnimation(scaleSize: 0.6)
                                     .offset(x: 10, y: -30)
                                 
                                 Text("The infant's cry was analyzed through deep learning. MFCC (Mel-Frequency Cepstral Coefficients) algorithm was used. The figure below obtains the frequency component through Fast Fourier Transform and visualizes the result through Mel-Spectrogram.")
@@ -150,7 +150,7 @@ struct ThirdView: View {
                 HStack{
                     
                     ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage4, className: "Pain",
-                        resultImage: analyzeResultImage1, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
+                        resultImage: analyzeResultImage4, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                         .onTapGesture {
                             playSound(sound: "pain")
                             if Isplay == false {
@@ -165,7 +165,7 @@ struct ThirdView: View {
                             }                        }
                     
                     ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage5, className: "Burping",
-                        resultImage: analyzeResultImage2, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
+                        resultImage: analyzeResultImage5, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                         .onTapGesture {
                             playSound(sound: "burping")
                             if Isplay == false {

@@ -70,7 +70,7 @@ struct SecondView: View {
                                         .frame(width: 585, height: 550)
                                         .clipped(), alignment: .center)
                                 
-                                ListeningSiriAnimation(scaleSize: 0.2)
+                                ListeningSiriAnimation(scaleSize: 0.6)
                                     .offset(x: 120 ,y: -90)
                             }
                             
