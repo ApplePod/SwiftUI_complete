@@ -67,7 +67,7 @@ struct ThirdViewButtonStyle: View {
                 Text("\(className)")
                     .foregroundColor(.white)
                     .bold()
-                    .font(.system(size: 20))
+                    .font(.system(size: 28))
                 
                 Image("\(cardImage)")
                     .resizable()

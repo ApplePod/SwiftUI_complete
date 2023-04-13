@@ -82,7 +82,7 @@ struct SecondView: View {
                         VStack(spacing: 20) {
                             
                             // Hand Termor Test Card
-                            SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage1, className: "Class 1", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
+                            SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 180, cardSymbolHeight: 50, cardImage: playImage1, className: "Class 1", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                                 .onTapGesture {
                                     playSound(sound: "tired")
                                     if Isplay == false {
@@ -99,7 +99,7 @@ struct SecondView: View {
                             
                             
                             // Speaking Test Card
-                            SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage2, className: "Class 2", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
+                            SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 180, cardSymbolHeight: 50, cardImage: playImage2, className: "Class 2", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                                 .onTapGesture {
                                     playSound(sound: "discomfort")
                                     if Isplay == false {
@@ -116,7 +116,7 @@ struct SecondView: View {
                                 }
                             
                             // Handwriting Test Card
-                            SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage3, className: "Class 3", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
+                            SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 180, cardSymbolHeight: 50, cardImage: playImage3, className: "Class 3", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                                 .onTapGesture {
                                     playSound(sound: "hungry")
                                     if Isplay == false {
@@ -131,7 +131,7 @@ struct SecondView: View {
                                     }
                                 }
                             
-                            SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage4, className: "Class 4", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
+                            SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 180, cardSymbolHeight: 50, cardImage: playImage4, className: "Class 4", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                                 .onTapGesture {
                                     playSound(sound: "pain")
                                     if Isplay == false {
@@ -147,7 +147,7 @@ struct SecondView: View {
                                 }
                             
                             
-                            SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage5, className: "Class 5", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
+                            SecondViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 180, cardSymbolHeight: 50, cardImage: playImage5, className: "Class 5", cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                                 .onTapGesture {
                                     playSound(sound: "burping")
                                     if Isplay == false {
@@ -193,14 +193,17 @@ struct SecondView: View {
                         Button(action: {
                             self.action = 1
                         }, label: {
-                            Text("Sori, can you help me?")
-                                .font(.title)
+                            Text("Vox, can you help me?")
+                                .bold()
+                                .font(.title3)
+                                .frame(width: 280, height: 60)
+                                .foregroundColor(.white)
+                                .background(LinearGradient(colors: [.teal, .purple], startPoint: .leading, endPoint: .trailing))
+                                .clipShape(Capsule())
                             
                         })
-                        .padding()
-                        .foregroundColor(.white)
-                        .background(Color.red)
-                        .cornerRadius(40)
+                        .padding(.all, 30)
+
                         
                     }
                     .padding(.leading, 20)

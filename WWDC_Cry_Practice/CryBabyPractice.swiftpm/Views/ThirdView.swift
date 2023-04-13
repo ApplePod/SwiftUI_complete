@@ -67,7 +67,7 @@ struct ThirdView: View {
                         ZStack{
                            
 
-                            CardView(cardSymbolIsOn: true, cardSymbolName: "", cardSymbolSize: 70, cardSymbolColor: .white, cardSymbolWidth: 250, cardSymbolHeight: 166, cardImage: "", cardSubtitleIsOn: true, cardSubtitle: "What is", cardSubtitleSize: 15, cardSubtitleColor: .white, cardTitle: "", cardTitleSize: 22, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.7, width: 600, height: 250, cornerRadius: 0, backgroundColor: .black)
+                            CardView(cardSymbolIsOn: true, cardSymbolName: "", cardSymbolSize: 70, cardSymbolColor: .white, cardSymbolWidth: 250, cardSymbolHeight: 166, cardImage: "", cardSubtitleIsOn: true, cardSubtitle: "", cardSubtitleSize: 15, cardSubtitleColor: .white, cardTitle: "", cardTitleSize: 22, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.7, width: 600, height: 250, cornerRadius: 0, backgroundColor: .black)
                            
 
                             
@@ -77,6 +77,7 @@ struct ThirdView: View {
                                 
                                 Text("The infant's cry was analyzed through deep learning. MFCC (Mel-Frequency Cepstral Coefficients) algorithm was used. The figure below obtains the frequency component through Fast Fourier Transform and visualizes the result through Mel-Spectrogram.")
                                     .foregroundColor(.white)
+                                    .font(.title2)
                             }
                         }
                         
@@ -94,8 +95,8 @@ struct ThirdView: View {
                 
                 HStack{
                     
-                    ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage1, className: "Tired",
-                        resultImage: analyzeResultImage1, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
+                    ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 230, cardSymbolHeight: 40, cardImage: playImage1, className: "Tired",
+                        resultImage: analyzeResultImage1, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                         .onTapGesture {
                             playSound(sound: "tired")
                             if Isplay == false {
@@ -110,8 +111,8 @@ struct ThirdView: View {
                             }
                         }
                     
-                    ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage2, className: "Discomfort",
-                        resultImage: analyzeResultImage2, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
+                    ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 230, cardSymbolHeight: 40, cardImage: playImage2, className: "Discomfort",
+                        resultImage: analyzeResultImage2, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                         .onTapGesture {
                             playSound(sound: "discomfort")
                             if Isplay == false {
@@ -127,8 +128,8 @@ struct ThirdView: View {
                         }
                     
                     
-                    ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage3, className: "Herger",
-                        resultImage: analyzeResultImage3, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
+                    ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 230, cardSymbolHeight: 40, cardImage: playImage3, className: "Herger",
+                        resultImage: analyzeResultImage3, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                         .onTapGesture {
                             playSound(sound: "hungry")
                             if Isplay == false {
@@ -149,8 +150,8 @@ struct ThirdView: View {
                 
                 HStack{
                     
-                    ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage4, className: "Pain",
-                        resultImage: analyzeResultImage4, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
+                    ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 230, cardSymbolHeight: 40, cardImage: playImage4, className: "Pain",
+                        resultImage: analyzeResultImage4, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                         .onTapGesture {
                             playSound(sound: "pain")
                             if Isplay == false {
@@ -164,8 +165,8 @@ struct ThirdView: View {
                                 Isplay.toggle()
                             }                        }
                     
-                    ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 100, cardSymbolHeight: 50, cardImage: playImage5, className: "Burping",
-                        resultImage: analyzeResultImage5, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "Step 1", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
+                    ThirdViewButtonStyle(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 20, cardSymbolColor: .white, cardSymbolWidth: 230, cardSymbolHeight: 40, cardImage: playImage5, className: "Burping",
+                        resultImage: analyzeResultImage5, resultImageWidth: 250, resultImageHeight: 160,cardSubtitleIsOn: true, cardSubtitle: "", cardSubtitleSize: 10, cardSubtitleColor: .orange, cardTitle: "", cardTitleSize: 13, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.6, width: 173, height: 70, cornerRadius: 47, backgroundColor: Color(.black))
                         .onTapGesture {
                             playSound(sound: "burping")
                             if Isplay == false {
@@ -192,13 +193,16 @@ struct ThirdView: View {
                         self.action = 1
                     }, label: {
                         Text("Real-Time Analysis")
-                            .font(.title)
+                            .bold()
+                            .font(.title3)
+                            .frame(width: 280, height: 60)
+                            .foregroundColor(.white)
+                            .background(LinearGradient(colors: [.teal, .purple], startPoint: .leading, endPoint: .trailing))
+                            .clipShape(Capsule())
                         
                     })
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(Color.purple)
-                    .cornerRadius(40)
+                    .padding(.all, 30)
+
                    
                 }
                 .padding(.leading, 20)

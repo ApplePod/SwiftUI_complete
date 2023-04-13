@@ -78,28 +78,28 @@
             filePath = "Views/SecondView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
             landmarkName = "SecondView_Previews"
             landmarkType = "14">
             <Locations>
                <Location
-                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 31663cdedf2f9137"
+                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 5ea104ab1f9eb8a9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; SwiftUI.Text in closure #4 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0)&gt; in closure #2 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.EmptyView, CryBaby.LoadingView&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;SwiftUI.EmptyView, CryBaby.LoadingView&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt;&gt; in CryBaby.SecondView.body.getter : some"
+                  symbolName = "static CryBaby.SecondView_Previews.previews.getter : some"
                   moduleName = "CryBaby"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/herry/Desktop/SwiftUI_Complete/WWDC_Cry_Practice/CryBabyPractice.swiftpm/Views/SecondView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "222"
-                  endingLineNumber = "222"
-                  offsetFromSymbolStart = "584">
+                  startingLineNumber = "226"
+                  endingLineNumber = "226"
+                  offsetFromSymbolStart = "88">
                </Location>
                <Location
-                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 7294d8820f9d37ae"
+                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 7294d8820f9d3401"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -109,8 +109,8 @@
                   urlString = "file:///Users/herry/Desktop/SwiftUI_Complete/WWDC_Cry_Practice/CryBabyPractice.swiftpm/Views/SecondView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "222"
-                  endingLineNumber = "222"
+                  startingLineNumber = "225"
+                  endingLineNumber = "225"
                   offsetFromSymbolStart = "0">
                </Location>
             </Locations>

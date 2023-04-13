@@ -65,15 +65,23 @@ struct WelcomeScene: View {
                 // Navigation Button
                 HStack(alignment: .bottom, spacing: 0) {
                     Spacer()
-                    Button("Get Started") {
-                        
+                    Button {
                         withAnimation {
                             nextPage = true
                             self.action = 1
                      
                         }
+                    } label: {
+                        Text("Get Started")
+                            .bold()
+                            .font(.title3)
+                            .frame(width: 280, height: 60)
+                            .foregroundColor(.white)
+                            .background(LinearGradient(colors: [.teal, .purple], startPoint: .leading, endPoint: .trailing))
+                            .clipShape(Capsule())
                     }
-                    .buttonStyle(NavigationButtonStyle(color: .blue))
+                    .padding(.all, 30)
+
                     
                    
                 }
