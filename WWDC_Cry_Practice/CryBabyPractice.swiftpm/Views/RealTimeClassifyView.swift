@@ -8,35 +8,47 @@ struct RealTimeClassifyView: View {
     @StateObject var viewModel2 = ContentViewModel2()
 
     var body: some View {
-        NavigationView {
-            VStack(spacing: 50) {
-                
-                ListeningSiriAnimation(scaleSize: 0.7)
-                
-                
-                Text(viewModel.placeholderText)
-                    .font(.system(size: 25))
-                    .multilineTextAlignment(.center)
-                
-                Text(viewModel.transcribedText)
-                    .font(.system(size: 25))
-                    .multilineTextAlignment(.center)
-                    .padding()
-                
-                if viewModel.transcribedText2 == "Cry" {
-                    Text(viewModel2.transcribedText)
+
+            NavigationView {
+
+
+                VStack(spacing: 50) {
+
+                    HStack{
+                        
+                        CardView(cardSymbolIsOn: true, cardSymbolName: "", cardSymbolSize: 70, cardSymbolColor: .white, cardSymbolWidth: 10, cardSymbolHeight: 10, cardImage: "", cardSubtitleIsOn: true, cardSubtitle: "", cardSubtitleSize: 15, cardSubtitleColor: .white, cardTitle: "", cardTitleSize: 22, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.7, width: 10, height: 10, cornerRadius: 0, backgroundColor: .black)
+                        
+                        ListeningSiriAnimation(scaleSize: 0.7)
+                        
+                        
+                        CardView(cardSymbolIsOn: true, cardSymbolName: "", cardSymbolSize: 70, cardSymbolColor: .white, cardSymbolWidth: 10, cardSymbolHeight: 10, cardImage: "", cardSubtitleIsOn: true, cardSubtitle: "", cardSubtitleSize: 15, cardSubtitleColor: .white, cardTitle: "", cardTitleSize: 22, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.7, width: 10, height: 10, cornerRadius: 0, backgroundColor: .black)
+                    }
+
+                    Text(viewModel.placeholderText)
                         .font(.system(size: 25))
                         .multilineTextAlignment(.center)
-                        .padding()
+
+
+                    Text(viewModel.transcribedText)
+                        .font(.system(size: 25))
+                        .multilineTextAlignment(.center)
+
+
+                    if viewModel.transcribedText2 == "Cry" {
+                        Text(viewModel2.transcribedText)
+                            .font(.system(size: 25))
+                            .multilineTextAlignment(.center)
+
                 }
             }
-        }
+            }
         .navigationViewStyle(.stack)
         .navigationBarHidden(true)
         .onAppear {
             viewModel.startAudioEngine()
             viewModel2.startAudioEngine()
         }
+
     }
 }
 
@@ -87,7 +99,7 @@ class ContentViewModel: NSObject, ObservableObject, GenderClassifierDelegate {
         DispatchQueue.main.async {
             self.transcribedText = "Recognition: \(identifier)\nConfidence \(confidence)"
             self.transcribedText2 = identifier
-            
+
         }
     }
 }
@@ -98,7 +110,7 @@ class ResultsObserver: NSObject, SNResultsObserving {
         guard let result = result as? SNClassificationResult,
               let classification = result.classifications.first else { return }
         let confidence = classification.confidence * 100.0
-        
+
         if confidence > 60 {
             delegate?.displayPredictionResult(identifier: confidence > 99.9 ? classification.identifier : "Noisy", confidence: confidence)
         }
@@ -166,7 +178,7 @@ class ResultsObserver2: NSObject, SNResultsObserving {
         guard let result = result as? SNClassificationResult,
               let classification = result.classifications.first else { return }
         let confidence = classification.confidence * 100.0
-        
+
         if confidence > 60 {
             delegate?.displayPredictionResult(identifier: confidence > 94.0 ? classification.identifier : "", confidence: confidence)
         }

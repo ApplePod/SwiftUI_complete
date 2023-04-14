@@ -55,12 +55,11 @@ struct ListeningSiriAnimation: View {
                 .rotationEffect(.degrees(isRotating ? 360 : 250))
                 .hueRotation(.degrees(isRotating ? 0 : 230))
                 .onAppear{
-                    withAnimation(.easeInOut(duration: 9).repeatForever(autoreverses: true)) {
+                    withAnimation(.easeIn(duration: 7).repeatForever(autoreverses: true)) {
                         isRotating.toggle()
                     }
                 }
         }.scaleEffect(scaleSize)
-        .frame(width: 100, height: 100)
     }
 }
 //
