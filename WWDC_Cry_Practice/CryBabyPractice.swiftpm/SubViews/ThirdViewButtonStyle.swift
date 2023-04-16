@@ -64,39 +64,42 @@ struct ThirdViewButtonStyle: View {
                 
 
             }  else {
-                Text("\(className)")
-                    .foregroundColor(.white)
-                    .bold()
-                    .font(.system(size: 28))
                 
-                Image("\(cardImage)")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .imageScale(.large)
-                    .cornerRadius(20)
-                    .frame(width: cardSymbolWidth - 20, height: cardSymbolHeight)
-                    .clipped()
-            }
-            
-            // Subtitle and Title.
-            VStack(alignment: .leading) {
+             
+                    Text("\(className)")
+                        .foregroundColor(.white)
+                        .bold()
+                        .font(.system(size: 24))
+                    
+                    Image("\(cardImage)")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .imageScale(.large)
+                        .cornerRadius(20)
+                        .frame(width: cardSymbolWidth - 20, height: cardSymbolHeight)
+                        .clipped()
+       
                 
-//                // Card Subtitle Existance Control Point
-//                if cardSubtitleIsOn {
-//                    // Subtitle
-//                    Text(cardSubtitle)
-//                        .font(.system(size: cardSubtitleSize, weight: .semibold, design: .default))
-//                        .foregroundColor(cardSubtitleColor)
-//                        .multilineTextAlignment(.center)
-//                }
-                
-                // Title
-                Text(cardTitle)
-                    .font(.system(size: cardTitleSize, weight: .bold, design: .default))
-                    .foregroundColor(cardTitleColor)
-                    .padding(.top, paddingTop)
-                    .multilineTextAlignment(.center)
-                    .frame(width: 250)
+                // Subtitle and Title.
+                VStack(alignment: .leading) {
+                    
+                    //                // Card Subtitle Existance Control Point
+                    //                if cardSubtitleIsOn {
+                    //                    // Subtitle
+                    //                    Text(cardSubtitle)
+                    //                        .font(.system(size: cardSubtitleSize, weight: .semibold, design: .default))
+                    //                        .foregroundColor(cardSubtitleColor)
+                    //                        .multilineTextAlignment(.center)
+                    //                }
+                    
+                    // Title
+                    Text(cardTitle)
+                        .font(.system(size: cardTitleSize, weight: .bold, design: .default))
+                        .foregroundColor(cardTitleColor)
+                        .padding(.top, paddingTop)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 250)
+                }
             }
         }
         .background(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)

@@ -14,8 +14,8 @@
             filePath = "Views/WelcomeScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -62,8 +62,8 @@
             filePath = "Views/SecondView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -78,13 +78,11 @@
             filePath = "Views/SecondView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
-            landmarkName = "SecondView_Previews"
-            landmarkType = "14">
+            startingLineNumber = "227"
+            endingLineNumber = "227">
             <Locations>
                <Location
-                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 5ea104ab1f9eb8a9"
+                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 5ea104ab1f9eb848"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -94,12 +92,27 @@
                   urlString = "file:///Users/herry/Desktop/SwiftUI_Complete/WWDC_Cry_Practice/CryBabyPractice.swiftpm/Views/SecondView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "226"
-                  endingLineNumber = "226"
+                  startingLineNumber = "227"
+                  endingLineNumber = "227"
                   offsetFromSymbolStart = "88">
                </Location>
                <Location
-                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 7294d8820f9d3401"
+                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 5ea104ab1f9eb86f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static CryBaby.SecondView_Previews.previews.getter : some"
+                  moduleName = "CryBaby"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/herry/Desktop/SwiftUI_Complete/WWDC_Cry_Practice/CryBabyPractice.swiftpm/Views/SecondView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "228"
+                  endingLineNumber = "228"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 7294d8820f9d34c3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -109,8 +122,8 @@
                   urlString = "file:///Users/herry/Desktop/SwiftUI_Complete/WWDC_Cry_Practice/CryBabyPractice.swiftpm/Views/SecondView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "225"
-                  endingLineNumber = "225"
+                  startingLineNumber = "227"
+                  endingLineNumber = "227"
                   offsetFromSymbolStart = "0">
                </Location>
             </Locations>

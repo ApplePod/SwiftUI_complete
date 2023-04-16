@@ -7,7 +7,7 @@ struct MyApp: App {
     
     var body: some Scene {
         WindowGroup {
-            WelcomeScene()
+            FirstView()
                 .preferredColorScheme(.dark)
 //                .alert(isPresented: $showingAlert) {
 //                    Alert(title: Text("Orientation Warning"),
