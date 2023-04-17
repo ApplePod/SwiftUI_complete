@@ -8,6 +8,7 @@ struct SecondView: View {
     @State private var action: Int? = 0
     @State var navigationButtonOpacity = 0.0
     @State var backgroundOpacity = 0.0
+    @State var nextPageButton = false
     
     
     @State var playImage1: String = "play1"
@@ -51,7 +52,7 @@ struct SecondView: View {
                         VStack (alignment: .leading){
                             
                             ZStack {
-                                ZstackSecondVoxView(subtitle: "Infant cry analysis AI.", subtitleColor: .white, title: "Hi, I am Vox", titleSize: 50, bodyIsOn: true, bodyText: "I am an AI sound analysis tool that specializes in analyzing the sounds of infants. I can distinguish infant cries into five categories: burping, discomfort, hunger, pain, and tiredness. Please press the Play button on the right to listen to the baby's cry and try to guess why the baby is crying. The answer will be revealed on the next page.", bodyTextColor: .white, bodyTextSize: 23, bodyPaddingTop: 30, bodyWidth: 500)
+                                ZstackSecondVoxView(subtitle: "Infant cry analysis AI.", subtitleColor: .white, title: "Hi, I am Vox", titleSize: 50, bodyIsOn: true, bodyText: "I am an AI that analyzes the crying sounds of infants. I classify infant cries into five categories: hunger, discomfort, burp, tiredness, and pain. If you press the play button on the right, you can hear the baby's crying sound. Try to guess why the baby is crying, and the answer will be revealed on the next page.", bodyTextColor: .white, bodyTextSize: 23, bodyPaddingTop: 30, bodyWidth: 500)
                                     .background(RoundedRectangle(cornerRadius: 47, style: .continuous)
                                         .fill(Color(.black))
                                         .frame(width: 585, height: 550)
@@ -60,6 +61,7 @@ struct SecondView: View {
 
                                 Button {
                                     self.action = 2
+                                    nextPageButton = true
                                 } label: {
                                     Text("Vox, can you help me?")
                                         .bold()
@@ -69,6 +71,8 @@ struct SecondView: View {
                                         .background(LinearGradient(colors: [.teal, .purple], startPoint: .leading, endPoint: .trailing))
                                         .clipShape(Capsule())
                                         .padding(.top, 20)
+                                    
+                                        
                                 }
                                 
                         }
@@ -169,6 +173,7 @@ struct SecondView: View {
                 }.frame(width: geo.size.width, height: geo.size.height)
             }
         }.navigationViewStyle(.stack)
+            .navigationBarBackButtonHidden(true)
     
     }
 }

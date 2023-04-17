@@ -37,7 +37,8 @@ let package = Package(
                 .fileAccess(.pictureFolder, mode: .readWrite),
                 .fileAccess(.moviesFolder, mode: .readWrite),
                 .fileAccess(.musicFolder, mode: .readWrite),
-                .fileAccess(.userSelectedFiles, mode: .readWrite)
+                .fileAccess(.userSelectedFiles, mode: .readWrite),
+                .microphone(purposeString: "Unknown Usage Description")
             ]
         )
     ],

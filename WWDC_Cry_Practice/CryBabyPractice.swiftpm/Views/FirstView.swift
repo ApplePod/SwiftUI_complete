@@ -5,6 +5,7 @@ struct FirstView: View {
     @State private var action: Int? = 0
     @State var navigationButtonOpacity = 0.0
     @State var isRotating = true
+    @State private var isActive = false
     
     var body: some View {
         
@@ -32,7 +33,7 @@ struct FirstView: View {
                             ZstackVox(cardSymbolIsOn: true, cardSymbolName: "", cardSymbolSize: 70, cardSymbolColor: .white, cardSymbolWidth: 250, cardSymbolHeight: 166, cardImage: "", cardSubtitleIsOn: true, cardSubtitle: "", cardSubtitleSize: 15, cardSubtitleColor: .white, cardTitle: "Real-time analysis of an infant's crying sound.", cardTitleSize: 22, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.7, width: 250, height: 250, cornerRadius: 40, backgroundColor: .black)
                                 .frame(height: 300)
                             
-                            ZstackView(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 70, cardSymbolColor: .white, cardSymbolWidth: 250, cardSymbolHeight: 166, cardImage: "tired", cardSubtitleIsOn: false, cardSubtitle: "", cardSubtitleSize: 0, cardSubtitleColor: .white, cardTitle: "AI diagnoses into six classes.", cardTitleSize: 22, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.8, width: 250, height: 250, cornerRadius: 40, backgroundColor: .black)
+                            ZstackView(cardSymbolIsOn: false, cardSymbolName: "", cardSymbolSize: 70, cardSymbolColor: .white, cardSymbolWidth: 250, cardSymbolHeight: 166, cardImage: "tired", cardSubtitleIsOn: false, cardSubtitle: "", cardSubtitleSize: 0, cardSubtitleColor: .white, cardTitle: "AI classifies sounds into six different categories.", cardTitleSize: 22, cardTitleColor: .white, paddingTop: 0, animationDuration: 0.8, width: 250, height: 250, cornerRadius: 40, backgroundColor: .black)
                                 .frame(height: 300)
                         }
                        
@@ -60,6 +61,7 @@ struct FirstView: View {
                 }
             }
         }.navigationViewStyle(.stack)
+            .navigationBarBackButtonHidden(true)
         
     }
 }

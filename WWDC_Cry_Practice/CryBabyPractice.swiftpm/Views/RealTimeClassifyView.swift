@@ -7,7 +7,8 @@ struct RealTimeClassifyView: View {
     
     @StateObject var viewModel = ContentViewModel()
     @StateObject var viewModel2 = ContentViewModel2()
-
+    @State private var action: Int? = 0
+    @State var nextPageButton = false
     
     var body: some View {
         NavigationView {
@@ -15,7 +16,10 @@ struct RealTimeClassifyView: View {
                 
                 VStack {
                     
-                    ZstackThirdVoxView(subtitle: "", subtitleColor: .white, title: "", titleSize: 50, bodyIsOn: true, bodyText: "Vox is analyzing the sound in the room in real time. If an infant's cry is heard, the analysis result is displayed in real time. If your infant is not currently crying or if you would like to test it, play the cries below.", bodyTextColor: .white, bodyTextSize: 23, bodyPaddingTop: 30, bodyWidth: 800)
+                    NavigationLink(destination: LastView(), tag: 5, selection: $action) {}
+                    
+                    ZstackThirdVoxView(subtitle: "", subtitleColor: .white, title: "", titleSize: 50, bodyIsOn: true, bodyText: "The artificial intelligence Vox analyzes the sound in the room in real-time. If an infant's cry is heard, the analysis result is displayed in real-time.", bodyTextColor: .white, bodyTextSize: 23, bodyPaddingTop: 30, bodyWidth: 800)
+                        .frame(height: 300)
 
                     Text(viewModel.transcribedText)
                         .font(.system(size: 25))
@@ -23,12 +27,27 @@ struct RealTimeClassifyView: View {
                         .padding(.top, 20)
                     
                     
-                    Text(viewModel.transcribedText2 == "Cry" ? viewModel2.transcribedText : "Infant cries are not detected.")
+                    Text(viewModel.transcribedText2 == "Cry" ? viewModel2.transcribedText : " \n Infant cries are not detected.")
                         .font(.system(size: 25))
                         .multilineTextAlignment(.center)
                         .padding(.top, 20)
                     
     
+                    Button(action: {
+                        self.action = 5
+                         nextPageButton = true
+                    }, label: {
+                        Text("Training Sound Classification Models")
+                            .bold()
+                            .font(.title3)
+                            .frame(width: 280, height: 60)
+                            .foregroundColor(.white)
+                            .background(LinearGradient(colors: [.teal, .purple], startPoint: .leading, endPoint: .trailing))
+                            .clipShape(Capsule())
+                        
+                    })
+                    .padding(.top, 30)
+                
                     
                 }.frame(width: geo.size.width, height: geo.size.height)
                 
