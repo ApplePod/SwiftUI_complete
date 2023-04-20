@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9F6957A8-DE82-4C8C-BA84-10C184EECE9B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA094752-DBB6-458F-BC71-94EDD98BF7E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Views/WelcomeScene.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "AA094752-DBB6-458F-BC71-94EDD98BF7E0 - 337ef165110784a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Spacer, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(CryBaby.IntroView, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in CryBaby.WelcomeScene.body.getter : some"
+                  moduleName = "CryBaby"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/herry/Desktop/SwiftUI_APP/WWDC/CryBaby.swiftpm/Views/WelcomeScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "708">
+               </Location>
+               <Location
+                  uuid = "AA094752-DBB6-458F-BC71-94EDD98BF7E0 - 8f7e055b575002d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(CryBaby.IntroView, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Spacer, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(CryBaby.IntroView, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.basicEaseIn(using: SwiftUI.Animation, delayCount: Swift.Double, _: () -&gt; ()) -&gt; some&gt;&gt;.0)&gt; in CryBaby.WelcomeScene.body.getter : some"
+                  moduleName = "CryBaby"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/herry/Desktop/SwiftUI_APP/WWDC/CryBaby.swiftpm/Views/WelcomeScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E091883F-3747-45D1-9D91-278F9F8A583E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Views/SecondView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Views/SecondView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "227"
+            endingLineNumber = "227">
+            <Locations>
+               <Location
+                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 5ea104ab1f9eb848"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static CryBaby.SecondView_Previews.previews.getter : some"
+                  moduleName = "CryBaby"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/herry/Desktop/SwiftUI_Complete/WWDC_Cry_Practice/CryBabyPractice.swiftpm/Views/SecondView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "227"
+                  endingLineNumber = "227"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 5ea104ab1f9eb86f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static CryBaby.SecondView_Previews.previews.getter : some"
+                  moduleName = "CryBaby"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/herry/Desktop/SwiftUI_Complete/WWDC_Cry_Practice/CryBabyPractice.swiftpm/Views/SecondView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "228"
+                  endingLineNumber = "228"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "C8BAC680-1E27-48EC-9797-EE7A73675E35 - 7294d8820f9d34c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryBaby.SecondView_Previews.init() -&gt; CryBaby.SecondView_Previews"
+                  moduleName = "CryBaby"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/herry/Desktop/SwiftUI_Complete/WWDC_Cry_Practice/CryBabyPractice.swiftpm/Views/SecondView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "227"
+                  endingLineNumber = "227"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
